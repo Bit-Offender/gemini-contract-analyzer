@@ -107,7 +107,7 @@ const UploadSection = () => {
     noClick: true,
   });
 
-  const removeFile = (name) => {
+  const removeFile = (name:any) => {
     setFiles((files) => files.filter((file) => file.name !== name));
   };
 
@@ -128,12 +128,11 @@ const UploadSection = () => {
               className="rounded-full relative py-2 px-6 bg-slate-900 border-[1.5px] border-gray-500 shadow-white/80 text-white"
             >
               <Sparkles className="h-8 w-8 mr-2 animate-pulse" />
-              <span>Lorem ipsum dolor sit amet.</span>
+              <span>Use AI Mode to enhance exprience</span>
             </Badge>
             <h1 className="text-5xl sm:text-6xl font-bold">Start Uploading</h1>
             <p className="text-xl font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-              atque.
+            Get vulnerability report, warnings and suggestions instantly. 
             </p>
           </div>
         </div>
@@ -145,7 +144,7 @@ const UploadSection = () => {
         <Card
           {...getRootProps()}
           className={cn(
-            "bg-slate-900 relative border-[1px] transition-colors duration-200 ease-in-out w-3xl h-52",
+            "bg-slate-900 relative border transition-colors duration-200 ease-in-out w-3xl h-52",
             {
               "border-white": isDragActive,
               "border-white/70 border-dashed": !isDragActive,
@@ -159,7 +158,7 @@ const UploadSection = () => {
             ) : (
               <div className="flex flex-col justify-center gap-4">
                 <p className="text-white">
-                  Drag &apos;n&apos; drop some files here
+                  Upload or Drag files here
                 </p>
                 <Button
                   className="rounded-full bg-slate-950 hover:cursor-pointer hover:bg-black/60 transition-all duration-300"

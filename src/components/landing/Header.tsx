@@ -4,9 +4,9 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <nav className="sticky border-b-[1.5px] border-gray-700 top-0 flex justify-between items-center py-4 px-4 bg-gray-950/80 backdrop-blur-md z-50">
+      <nav className="sticky border-b-[1.5px] border-gray-700 top-0 flex justify-between items-center py-4 px-4  backdrop-blur-md z-50">
         <Link href="/" className="text-lg">
-          AppName
+          Legal Master
         </Link>
         <div className="flex gap-5 items-center justify-between">
           <Link

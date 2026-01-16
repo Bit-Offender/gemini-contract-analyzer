@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="flex flex-col justify-center text-center items-center mt-18 space-y-10">
         <div className="text-4xl tracking-wide font-bold leading-13">
           Understand What You&apos;re <br />
-          <span className="inline-block min-w-[280px] text-center">
+          <span className="inline-block min-w-70 text-center">
             <FlipWords words={words} className="text-white" />
           </span>
         </div>
