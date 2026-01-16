@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
-import { Toaster } from 'react-hot-toast';  
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
 const IBMPlexSans = IBM_Plex_Sans({
   variable: "--font-IBM-plex-sans",
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700']
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${IBMPlexSans.variable} antialiased text-white`}
-      >
+      <body className={`${IBMPlexSans.variable} antialiased text-white`}>
         {children}
         <Toaster />
       </body>
